@@ -29,7 +29,10 @@ const taskSlice = createSlice({
       state.tasks = action.payload;
     },
     setFilter: (state, action) => {
+      console.log(action.payload);
+      
       state.filter = action.payload;
+      
     }
   }
 });

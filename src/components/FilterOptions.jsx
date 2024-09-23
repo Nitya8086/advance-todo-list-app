@@ -6,7 +6,8 @@ const FilterOptions = () => {
   const dispatch = useDispatch();
 
   const handleFilterChange = (e) => {
-    dispatch(setFilter(e.target.value));  
+    dispatch(setFilter(e.target.value));
+  
   };
 
   return (

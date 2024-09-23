@@ -17,7 +17,7 @@ export const selectFilteredTasks = createSelector(
       case 'dueSoon':
         return tasks.filter(task => {
           const dueDate = new Date(task.dueDate);
-          return (dueDate - now) >= 0 && (dueDate - now) < 3 * 24 * 60 * 60 * 1000; // Due within the next 3 days
+          return (dueDate - now) >= 0 && (dueDate - now) < 3 * 24 * 60 * 60 * 1000; 
         });
       case 'completed':
         return tasks.filter(task => task.completed === true);

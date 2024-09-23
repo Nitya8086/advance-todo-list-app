@@ -26,7 +26,7 @@ const AddTaskModal = () => {
 
   return (
     <div>
-      {/* Add Task Button */}
+    
       <button
         className="bg-violet-500 text-white font-bold py-2 px-4 rounded hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 transition-all"
         onClick={() => setIsOpen(true)}
@@ -34,13 +34,13 @@ const AddTaskModal = () => {
         Add Task
       </button>
 
-      {/* Modal */}
+   
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
           <div className="bg-white rounded-lg shadow-lg max-w-md w-full mx-4 p-6 relative">
             <h2 className="text-xl font-bold mb-4 text-center text-gray-800">Add New Task</h2>
 
-            {/* Task Title Input */}
+           
             <input
               type="text"
               name="title"
@@ -50,7 +50,7 @@ const AddTaskModal = () => {
               className="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-violet-500"
             />
 
-            {/* Task Description */}
+          
             <textarea
               name="description"
               value={taskData.description}
@@ -59,7 +59,7 @@ const AddTaskModal = () => {
               className="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-violet-500"
             />
 
-            {/* Priority Selector */}
+          
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 mb-2">Priority</label>
               <select
@@ -74,16 +74,17 @@ const AddTaskModal = () => {
               </select>
             </div>
 
-            {/* Due Date Input */}
+        
             <input
               type="date"
               name="dueDate"
               value={taskData.dueDate}
               onChange={handleInputChange}
+              placeholder='enter date'
               className="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-violet-500"
             />
 
-            {/* Action Buttons */}
+          
             <div className="flex justify-between mt-6">
               <button
                 className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-

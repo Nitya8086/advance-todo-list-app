@@ -81,6 +81,7 @@ const AddTaskModal = () => {
               value={taskData.dueDate}
               onChange={handleInputChange}
               placeholder='enter date'
+                pattern="yyyy-MM-dd"
               className="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-violet-500"
             />
 
